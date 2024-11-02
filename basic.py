@@ -149,6 +149,9 @@ def safe_division():
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
 
+        finally:
+            print("Thank you for using Safe Division.")
+
 safe_division()
 
 # Conditional Statements
@@ -163,4 +166,12 @@ def simple_while_loop():
         print(count)
         count += 1
 
-# Command line arguments
+def score_to_grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    else:
+        return "F"
